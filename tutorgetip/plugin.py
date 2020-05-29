@@ -11,8 +11,7 @@ templates = os.path.join(HERE, "templates")
 # Handle Errors when Sending Query to server --> All `tutor` commands run this program regardless of whether the plugin is enabled or disabled
 try:
     # Send request to AWS to get IP address
-    # TODO: Change URL
-    response = requests.get('http://localhost:3000/')
+    response = requests.get('http://169.254.169.254/latest/meta-data/local-ipv4', timeout=0.01)
 
     # TODO: Find way to validate IP ADDRESS
     IP_ADDRESS = response.text
