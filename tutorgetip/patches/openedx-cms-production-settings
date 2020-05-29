@@ -1,14 +1,14 @@
 
 {% if GETIP_AWS_IP_LOOKUP %}
-import requests
-# TODO: Change URL
 try:
+  import requests
+# TODO: Change URL
   response = requests.get('http://localhost:3000/')
+# TODO: Find way to validate IP ADDRESS
   IP_ADDRESS = response.text
-  # TODO: Find way to validate IP ADDRESS
-  ALLOWED_HOSTS.append(IP_ADDRESS)
 except requests.exceptions.RequestException as e:
-    print(f"Error getting IP Address: {e}")
+  print(f"Error getting IP Address: {e}")
 {% else %}
-ALLOWED_HOSTS.append("{{GETIP_AWS_HOST_IP}}")
+IP_ADDRESS = "{{GETIP_AWS_HOST_IP}}"
 {% endif %}
+ALLOWED_HOSTS.append(IP_ADDRESS)

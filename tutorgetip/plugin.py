@@ -21,7 +21,6 @@ try:
     print("getIP plugin is working")
 
     config = {
-    # Run command `tutor config save --set MYPLUGIN_AWS_IP_LOOKUP=desiredValue` to set value (True or False)
     "add": {
         "AWS_HOST_IP": IP_ADDRESS,
         "AWS_IP_LOOKUP": True
