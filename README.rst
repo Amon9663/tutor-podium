@@ -6,7 +6,7 @@ Installation
 
 ::
 
-    pip install git+https://github.com/myusername/tutor-getIP
+    pip install git+https://github.com/wingraptor/tutor-getIP
 
 Usage
 -----
