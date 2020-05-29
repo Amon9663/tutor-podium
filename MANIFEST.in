@@ -1,0 +1,2 @@
+recursive-include tutorgetip/patches *
+recursive-include tutorgetip/templates *

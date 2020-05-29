@@ -1,0 +1,12 @@
+
+{% if GETIP_AWS_IP_LOOKUP %}
+import requests
+# TODO: Change URL
+response = requests.get('http://localhost:3000/')
+IP_ADDRESS = response.text
+
+# TODO: Find way to validate IP ADDRESS
+ALLOWED_HOSTS.append(IP_ADDRESS)
+{% else %}
+ALLOWED_HOSTS.append("{{GETIP_AWS_HOST_IP}}")
+{% endif %}
