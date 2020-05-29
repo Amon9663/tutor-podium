@@ -14,7 +14,7 @@ Usage
 ::
 
     tutor plugins enable getIP
-    
+    Run command the `tutor config save --set GETIP_AWS_IP_LOOKUP=desiredValue` to set value of desiredValue to True or False
 
 License
 -------
