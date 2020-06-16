@@ -35,7 +35,7 @@ try:
     # }
     }
 except requests.exceptions.RequestException as e:
-    print(f"Error getting IP Address: {e}")
+    print("Error getting IP Address: {0}".format(e))
 
 
 hooks = {}

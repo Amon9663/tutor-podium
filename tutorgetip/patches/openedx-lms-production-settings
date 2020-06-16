@@ -5,7 +5,7 @@ try:
 # TODO: Find way to validate IP ADDRESS
   IP_ADDRESS = response.text
 except requests.exceptions.RequestException as e:
-  print(f"Error getting IP Address: {e}")
+  print("Error getting IP Address: {0}".format(e))
 {% else %}
 IP_ADDRESS = "{{GETIP_AWS_HOST_IP}}"
 {% endif %}
