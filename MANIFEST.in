@@ -1,2 +1,2 @@
-recursive-include tutorgetip/patches *
-recursive-include tutorgetip/templates *
+recursive-include tutor_podium/patches *
+recursive-include tutor_podium/templates *

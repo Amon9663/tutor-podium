@@ -9,23 +9,23 @@ with io.open(os.path.join(here, "README.rst"), "rt", encoding="utf8") as f:
 
 about = {}
 with io.open(
-    os.path.join(here, "tutorgetip", "__about__.py"),
+    os.path.join(here, "tutor_podium", "__about__.py"),
     "rt",
     encoding="utf-8",
 ) as f:
     exec(f.read(), about)
 
 setup(
-    name="tutor-getIP",
+    name="tutor-podium",
     version=about["__version__"],
-    url="https://github.com/myusername/tutor-getIP",
+    url="https://github.com/gthpal/tutor-podium",
     project_urls={
-        "Code": "https://github.com/myusername/tutor-getIP",
-        "Issue tracker": "https://github.com/myusername/tutor-getIP/issues",
+        "Code": "https://github.com/gthpal/tutor-podium",
+        "Issue tracker": "https://github.com/gthpal/tutor-podium/issues",
     },
     license="AGPLv3",
-    author="Akono Brathwaite",
-    description="getIP plugin for Tutor",
+    author="Dario Thornhill",
+    description="Podium configuration for Tutor",
     long_description=readme,
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
@@ -33,7 +33,7 @@ setup(
     install_requires=["tutor-openedx"],
     entry_points={
         "tutor.plugin.v0": [
-            "getIP = tutorgetip.plugin"
+            "podium = tutor_podium.plugin"
         ]
     },
     classifiers=[

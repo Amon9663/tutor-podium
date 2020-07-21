@@ -1,4 +1,5 @@
-{% if GETIP_AWS_IP_LOOKUP %}
+
+{% if PODIUM_AWS_IP_LOOKUP %}
 try:
   import requests
   response = requests.get('http://169.254.169.254/latest/meta-data/local-ipv4', timeout=0.01)
@@ -7,6 +8,6 @@ try:
 except requests.exceptions.RequestException as e:
   print("Error getting IP Address: {0}".format(e))
 {% else %}
-IP_ADDRESS = "{{GETIP_AWS_HOST_IP}}"
+IP_ADDRESS = "{{PODIUM_AWS_HOST_IP}}"
 {% endif %}
 ALLOWED_HOSTS.append(IP_ADDRESS)

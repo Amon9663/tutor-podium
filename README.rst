@@ -1,4 +1,4 @@
-getIP plugin for `Tutor <https://docs.tutor.overhang.io>`__
+Podium plugin for `Tutor <https://docs.tutor.overhang.io>`__
 ===================================================================================
 
 Installation
@@ -6,15 +6,15 @@ Installation
 
 ::
 
-    pip install git+https://github.com/wingraptor/tutor-getIP
+    pip install git+https://github.com/wingraptor/tutor-podium
 
 Usage
 -----
 
 ::
 
-    tutor plugins enable getIP
-    Run command the `tutor config save --set GETIP_AWS_IP_LOOKUP=desiredValue` to set value of desiredValue to True or False
+    tutor plugins enable podium
+    Run command the `tutor config save`
 
 License
 -------
