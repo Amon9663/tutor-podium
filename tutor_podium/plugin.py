@@ -21,9 +21,9 @@ try:
         "AWS_HOST_IP": IP_ADDRESS,
         "AWS_IP_LOOKUP": True,
     },
-    "set": {
-        "ENABLE_SMTP": False
-    }
+    # "set": {
+    #     "ENABLE_SMTP": False
+    # }
 
     # Does not automatically append plugin name to key name in config.yml as per docs (Potential bug)
     # "set":{

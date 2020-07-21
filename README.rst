@@ -6,7 +6,7 @@ Installation
 
 ::
 
-    pip install git+https://github.com/wingraptor/tutor-podium
+    pip install git+https://github.com/gthpal/tutor-podium
 
 Usage
 -----
