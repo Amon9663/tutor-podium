@@ -36,8 +36,7 @@ try:
     # }
     }
 except requests.exceptions.RequestException as e:
-    logging.exception("Error getting IP Address: {0}".format(e))
-
+    pass
 
 hooks = {}
 
