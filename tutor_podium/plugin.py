@@ -1,6 +1,7 @@
 from glob import glob
 import os
 import requests
+import logging
 
 from .__about__ import __version__
 
@@ -35,7 +36,7 @@ try:
     # }
     }
 except requests.exceptions.RequestException as e:
-    print("Error getting IP Address: {0}".format(e))
+    logging.exception("Error getting IP Address: {0}".format(e))
 
 
 hooks = {}
